@@ -4,7 +4,7 @@ A lightweight, Trello-style Kanban task board built with vanilla HTML, CSS, and 
 
 ## Live Demo
 
-[Add deployed link here]
+[Kanban](https://kanban-jade-omega.vercel.app/)
 
 ## Features
 

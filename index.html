@@ -6,19 +6,14 @@
   <title>Kanban Board</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-
   <header class="app-header">
     <h1>Kanban Task Board</h1>
   </header>
-
   <div class="app-body">
     <aside class="sidebar" id="sidebar">
-
       <div class="sidebar-top">
         <h3 class="sidebar-title">Lists</h3>
-
         <button
           id="sidebarToggle"
           class="sidebar-toggle-btn"
@@ -26,72 +21,53 @@
           ☰
         </button>
       </div>
-
       <div class="sidebar-list-items" id="sidebarItems">
-        <!-- populated dynamically -->
       </div>
-
     </aside>
-
     <main class="board" id="board">
-      <!-- Content generated dynamically by render.js -->
     </main>
   </div>
-
   <div class="modal-overlay" id="modalOverlay" style="display: none;">
     <div class="modal">
-
       <div class="modal-header">
         <input
           type="text"
           id="editTitleInput"
           class="modal-title-input"
         />
-
         <button class="modal-close-btn" id="modalCloseBtn">
           ✕
         </button>
       </div>
-
       <label class="modal-label">Labels</label>
-
       <div class="label-picker" id="labelPicker">
-        <!-- populated dynamically -->
       </div>
-
       <label class="modal-label">Description</label>
-
       <textarea
         id="editDescInput"
         class="modal-desc-input"
         placeholder="Add a more detailed description..."
       ></textarea>
-
       <label class="modal-label">Due Date</label>
-
       <input
         type="date"
         id="editDueDateInput"
         class="modal-date-input"
       />
-
       <div class="modal-footer">
         <button class="save-card-btn" id="saveCardBtn">
           Save
         </button>
-
         <button class="delete-card-btn" id="deleteCardBtn">
           Delete
         </button>
       </div>
-
       <div
         class="delete-confirm"
         id="deleteConfirm"
         style="display: none;"
       >
         <p>Delete this card? This can't be undone.</p>
-
         <div class="form-actions">
           <button
             class="confirm-delete-btn"
@@ -99,7 +75,6 @@
           >
             Yes, delete
           </button>
-
           <button
             class="cancel-delete-btn"
             id="cancelDeleteBtn"
@@ -108,19 +83,15 @@
           </button>
         </div>
       </div>
-
     </div>
   </div>
-
   <script src="js/data.js"></script>
   <script src="js/render.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/dragdrop.js"></script>
   <script src="js/app.js"></script>
-
   <script>
     renderBoard();
   </script>
-
 </body>
 </html>
